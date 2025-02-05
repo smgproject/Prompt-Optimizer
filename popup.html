@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Optimizer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Prompt Optimizer</h1>
+    
+    <!-- Textbox for Input -->
+    <div class="input-section">
+      <label for="prompt-input">Enter Your Prompt:</label>
+      <textarea id="prompt-input" placeholder="Type your prompt here..."></textarea>
+    </div>
+
+    <!-- Tone Selection Dropdown -->
+    <div class="tone-selection">
+      <label for="tone-selector">Select Tone:</label>
+      <select id="tone-selector">
+        <option value="academic">Academic & Educational</option>
+        <option value="professional">Professional/Corporate</option>
+        <option value="creative">Creative & Artistic</option>
+        <option value="casual">Casual & Friendly</option>
+        <option value="technical">Technical</option>
+      </select>
+    </div>
+    
+    <!-- Optimize Button -->
+    <button id="optimize-btn">Optimize Prompt</button>
+    
+    <!-- Generated Prompts Section -->
+    <div id="generated-prompts">
+      <h3>Sample Optimized Prompts:</h3>
+      <div id="samples"></div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

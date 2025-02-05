@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 15px;
+  width: 350px;
+  background-color: #f8f9fa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h1 {
+  font-size: 1.4em;
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+}
+
+.input-section, .tone-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  resize: vertical;
+  font-size: 14px;
+}
+
+select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  background-color: white;
+}
+
+button#optimize-btn {
+  background-color: #3498db;
+  padding: 12px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+button#optimize-btn:hover {
+  background-color: #2980b9;
+}
+
+#generated-prompts {
+  margin-top: 10px;
+}
+
+.prompt-card {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.prompt-card p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.copy-btn {
+  background-color: #27ae60;
+  padding: 6px 12px;
+  font-size: 12px;
+  float: right;
+}
+
+.copy-btn:hover {
+  background-color: #219a52;
+}
